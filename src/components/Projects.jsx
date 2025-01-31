@@ -51,7 +51,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="shadow-lg overflow-hidden rounded-lg p-6 bg-white border-4 border-transparent hover:border-blue-500 hover:border-collapse transition-all duration-300 ease-in-out cursor-pointer"
+              className="shadow-lg overflow-hidden rounded-lg p-6 bg-white border-2 border-transparent hover:border-blue-500 hover:border-collapse focus:ring-4 focus:ring-blue-500 transition-all duration-300 ease-in-out cursor-pointer"
               style={{
                 background: "white",
               }}

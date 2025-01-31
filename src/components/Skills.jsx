@@ -84,7 +84,7 @@ const Skills = () => {
                 </div>
 
                 {/* Centered Text */}
-                <p className="mt-2 text-sm sm:text-base md:text-lg font-bold text-center text-gray-800">
+                <p className="mt-3 text-sm sm:text-base md:text-lg font-bold text-center text-gray-800">
                   {tech.name}
                 </p>
               </div>
