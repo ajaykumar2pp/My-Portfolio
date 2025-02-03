@@ -8,20 +8,18 @@ const Contact = () => {
       <div className="container mx-auto px-6 md:px-8 text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
       </div>
-
       <div className="flex justify-center items-center bg-gray-800 min-h-screen">
         <div className="w-full max-w-7xl px-6">
           {/* Responsive Grid Layout */}
-
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info Box */}
-            <div className="w-full md:w-auto  bg-gray-900 p-4 md:p-6 rounded-lg shadow-lg">
+            <div className="w-full md:w-auto bg-gray-900 p-4 md:p-6 rounded-lg shadow-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center text-white">
-                Contact
+                Contact Information
               </h2>
-              <ul className="text-gray-300 font-medium space-y-4 ">
+              <ul className="text-gray-300 font-medium space-y-4">
                 {/* Email */}
-                <li className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
+                <li key="email" className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
                   <div className="flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full hover:bg-blue-400 transition-colors duration-200">
                     <SiGmail />
                   </div>
@@ -33,7 +31,7 @@ const Contact = () => {
                   </div>
                 </li>
                 {/* Phone */}
-                <li className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
+                <li key="phone" className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
                   <div className="flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full hover:bg-blue-400 transition-colors duration-200">
                     <FaPhone />
                   </div>
@@ -45,7 +43,7 @@ const Contact = () => {
                   </div>
                 </li>
                 {/* Location */}
-                <li className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
+                <li key="location" className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 cursor-pointer p-4 md:p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300">
                   <div className="flex items-center justify-center w-12 h-12 bg-blue-500 text-white rounded-full hover:bg-blue-400 transition-colors duration-200">
                     <FaMapMarkerAlt />
                   </div>
@@ -58,13 +56,11 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-
-             {/* Contact Form */}
+            {/* Contact Form */}
             <div className="bg-gray-900 p-8 rounded-lg shadow-lg md:col-span-2">
               <h2 className="text-2xl font-bold mb-4 text-center text-white">
                 Quick Contact
               </h2>
-
               <form>
                 {/* Name Input */}
                 <div className="relative mb-4">
@@ -81,7 +77,6 @@ const Contact = () => {
                     Your Name
                   </label>
                 </div>
-
                 {/* Email Input */}
                 <div className="relative mb-4">
                   <input
@@ -97,7 +92,6 @@ const Contact = () => {
                     Email Address
                   </label>
                 </div>
-
                 {/* Mobile Number Input */}
                 <div className="relative mb-4">
                   <input
@@ -113,7 +107,6 @@ const Contact = () => {
                     Your Mobile Number
                   </label>
                 </div>
-
                 {/* Message Input */}
                 <div className="relative mb-4">
                   <textarea
@@ -128,7 +121,6 @@ const Contact = () => {
                     Your Message
                   </label>
                 </div>
-
                 {/* Send Message Button */}
                 <button
                   type="submit"
