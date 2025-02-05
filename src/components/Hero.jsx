@@ -1,13 +1,13 @@
-import hacke3D from "../assets/hacker3D.png";
-import { Tilt } from "react-tilt";
+import hacker3D from "../assets/hacker3D.png"; 
+import Tilt from "react-parallax-tilt"; 
 import Typewriter from "typewriter-effect";
 
 const Hero = () => (
-  <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center px-6 py-10 sm:py-12 gap-8">
+  <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 py-10 gap-8">
     
     {/* Text Section */}
-    <div className="w-full text-center sm:text-center px-4 sm:order-first md:order-first">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-purple-500 animate-pulse transform transition-transform duration-300 hover:scale-105">
+    <div className="w-full text-center px-4">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-500 animate-pulse transform transition-transform duration-300 hover:scale-105 cursor-pointer">
         Hi, I'm Ajay Kumar
       </h1>
 
@@ -33,14 +33,17 @@ const Hero = () => (
 
     {/* Image Section with Tilt Effect */}
     <Tilt
-      options={{ max: 15, scale: 1.05, speed: 400 }}
-      className="w-full flex justify-center sm:order-last md:order-last"
+      tiltMaxAngleX={15}
+      tiltMaxAngleY={15}
+      scale={1.05}
+      transitionSpeed={400}
+      className="w-full flex justify-center"
     >
       <img
-        src={hacke3D}
+        src={hacker3D}
         alt="hacker"
         draggable="false"
-        className="cursor-pointer max-w-xs sm:max-w-lg transform transition-transform duration-300 hover:scale-105 drop-shadow-lg"
+        className="cursor-pointer max-w-xs sm:max-w-lg transform transition-transform duration-300 hover:scale-60 drop-shadow-lg"
       />
     </Tilt>
   </div>
