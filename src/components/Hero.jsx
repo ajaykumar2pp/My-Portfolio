@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => (
-  <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 py-10 gap-8">
+  <div className="min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 py-10 gap-8">
     
     {/* Text Section */}
     <div className="w-full text-center px-4">
