@@ -2,8 +2,8 @@
 // import { OrbitControls } from '@react-three/drei';
 
 const Hero = () => (
-  <div className="h-screen bg-gradient-to-b from-gray-800 to-black text-white flex items-center justify-center">
-    <div className="text-center">
+  <div className="min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex items-center justify-center py-20">
+    <div className="text-center px-4">
       <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Ajay Kumar</h1>
       <p className="mt-4 text-lg md:text-xl">Full Stack Web Developer & Designer</p>
     </div>
