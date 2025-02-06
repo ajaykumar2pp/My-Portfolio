@@ -6,7 +6,10 @@ import Contact from "./Contact";
 import Skills from "./Skills";
 import Education from "./Education";
 import Map from "./Map"
-import Tech from "./Tech"
+import Certificate from "./Certificate";
+// import Tech from "./Tech"
+
+// import Map3D from "./Map3D";
 
 
 
@@ -15,11 +18,13 @@ const Home = () => {
     <div>
       <Hero />
       <About />
-      <Tech />
       <Skills />
+      {/* <Tech /> */}
       <Education />
+      <Certificate />
       <Projects />
       <Contact />
+      {/* <Map3D /> */}
       <Map />
     </div>
   );

@@ -57,10 +57,10 @@ const Education = () => {
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-semibold">
+                <h3 className="sm:text-xl md:lg lg:text-2xl font-semibold">
                   Full Stack Web Development
                 </h3>
-                <p className="text-gray-300">Coding Ninjas</p>
+                <p className=" text-lg text-gray-300">Coding Ninjas</p>
 
                 {/* Date with Calendar Icon */}
                 <p className="flex items-center space-x-3">
@@ -83,8 +83,8 @@ const Education = () => {
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-semibold">Bachelor of Science</h3>
-                <p className="text-gray-300">Gurukul Kangri University</p>
+                <h3 className="sm:text-xl md:lg lg:text-2xl font-semibold">Bachelor of Science</h3>
+                <p className=" text-lg text-gray-300">Gurukul Kangri University</p>
 
                 {/* Date with Calendar Icon */}
                 <p className="flex items-center space-x-3">

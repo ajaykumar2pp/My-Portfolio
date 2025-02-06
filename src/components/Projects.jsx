@@ -31,8 +31,7 @@ const Projects = () => {
       title: "E-commerce",
       tech: "React, Node.js, MongoDB",
       link: "#",
-      description:
-        "An E-commerce platform for buying and selling products online",
+      description: "An E-commerce platform for buying and selling products online",
     },
     {
       title: "Job Portal",
@@ -43,13 +42,11 @@ const Projects = () => {
   ];
 
   return (
-    <div className="py-16 px-6 bg-gray-100">
+    <div className="py-16 px-6 bg-gray-900 text-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl text-gray-600 font-bold mb-8 text-center">
-          Projects
-        </h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <Tilt
               tiltMaxAngleX={5}
@@ -57,11 +54,11 @@ const Projects = () => {
               scale={1.05}
               transitionSpeed={300}
               key={index}
-              className="  shadow-lg hover:shadow-lg overflow-hidden rounded-lg p-6 bg-white border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:ring-4 focus:ring-blue-300  hover:border-opacity-100 transition-all duration-300 ease-in-out cursor-pointer"
+              className="shadow-lg hover:shadow-lg overflow-hidden rounded-lg p-6 bg-gray-800 border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:ring-4 focus:ring-blue-300 transition-all duration-300 ease-in-out cursor-pointer"
             >
               <div className="p-5 h-full flex flex-col justify-between">
                 <div className="flex justify-between items-center">
-                  <h3 className="text-2xl text-gray-800 font-semibold">
+                  <h3 className="text-2xl text-gray-100 font-semibold">
                     {project.title}
                   </h3>
                   {/* GitHub Icon */}
@@ -70,14 +67,14 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-github fa-lg text-gray-600 hover:text-blue-500"></i>
+                    <i className="fab fa-github fa-lg text-gray-400 hover:text-blue-400"></i>
                   </a>
                 </div>
-                <p className="mt-2 text-gray-600">{project.tech}</p>
-                <p className="mt-2">{project.description}</p>
+                <p className="mt-2 text-gray-300">{project.tech}</p>
+                <p className="mt-2 text-gray-400">{project.description}</p>
                 <a
                   href={project.link}
-                  className="block mt-4 text-indigo-600 hover:underline"
+                  className="block mt-4 text-blue-400 hover:underline"
                 >
                   View Project
                 </a>
