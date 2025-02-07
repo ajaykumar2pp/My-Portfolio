@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => (
-  <div className="min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 py-10 gap-8">
+  <div className="min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-10">
     
     {/* Text Section */}
     <div className="w-full text-center px-4">
@@ -24,18 +24,22 @@ const Hero = () => (
             ],
             autoStart: true,
             loop: true,
-            delay: 40,
-            deleteSpeed: 30,
+            delay: 50,
+            deleteSpeed: 25,
           }}
         />
       </p>
+        {/* Call to Action Button */}
+        <button className="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition">
+        Let's Connect
+      </button>
     </div>
 
     {/* Image Section with Tilt Effect */}
     <Tilt
-      tiltMaxAngleX={15}
-      tiltMaxAngleY={15}
-      scale={1.05}
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      scale={1.02}
       transitionSpeed={400}
       className="w-full flex justify-center"
     >
@@ -43,7 +47,8 @@ const Hero = () => (
         src={hacker3D}
         alt="hacker"
         draggable="false"
-        className="cursor-pointer max-w-xs sm:max-w-lg transform transition-transform duration-300 hover:scale-60 drop-shadow-lg"
+        className="max-w-xs sm:max-w-md transform hover:scale-105 transition duration-300 drop-shadow-xl cursor-pointer"
+        
       />
     </Tilt>
   </div>
