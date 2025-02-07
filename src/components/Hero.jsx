@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => (
-  <div className="min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-10">
+  <div className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-10">
     
     {/* Text Section */}
     <div className="w-full text-center px-4">
@@ -12,7 +12,7 @@ const Hero = () => (
       </h1>
 
       {/* Typewriter Effect for Roles */}
-      <p className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+      <div className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
         <span className="text-green-400 animate-pulse">✨ </span>
         <Typewriter
           options={{
@@ -28,7 +28,7 @@ const Hero = () => (
             deleteSpeed: 25,
           }}
         />
-      </p>
+      </div>
         {/* Call to Action Button */}
         <button className="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition">
         Let's Connect

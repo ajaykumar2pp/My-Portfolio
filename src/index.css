@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   /* Smooth Scrolling */
   html {
@@ -27,4 +29,5 @@
     background: linear-gradient(45deg, #4b5563, #000000); 
   }
 }
+
 

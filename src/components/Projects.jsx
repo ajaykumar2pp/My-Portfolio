@@ -67,7 +67,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-github fa-lg text-gray-400 hover:text-blue-400"></i>
+                    <i className="fab fa-github fa-xl text-white hover:text-blue-300 transform scale-100 hover:scale-125 transition-transform duration-200 hover:stroke-blue-400"></i>
                   </a>
                 </div>
                 <p className="mt-2 text-gray-300">{project.tech}</p>

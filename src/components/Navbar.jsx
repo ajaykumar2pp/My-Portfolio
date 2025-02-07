@@ -8,7 +8,9 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white px-5 py-3 z-50 shadow-lg">
+    <nav
+      className="fixed top-0 left-0 w-full bg-gray-900 text-white px-6 py-3 z-50 shadow-lg"
+    >
       <div className="flex justify-between items-center">
         {/* Logo or Brand Name */}
         <div className="text-2xl font-semibold">
@@ -28,7 +30,7 @@ const Navbar = () => {
 
         {/* Mobile Menu with Smooth Slide Animation */}
         <div
-          className={`fixed top-0 left-0 w-3/4 h-full bg-gray-900 p-6 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 left-0 w-3/4 h-full bg-gray-900 px-6 py-3 transform transition-transform duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } md:hidden`}
         >
@@ -36,7 +38,7 @@ const Navbar = () => {
             <li className="text-2xl font-semibold">
               <Link
                 to="/"
-                className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text hover:text-gray-300"
+                className="text-green-500  bg-clip-text hover:text-gray-300"
                 onClick={toggleMenu}
               >
                 Ajay Kumar
@@ -101,8 +103,11 @@ const Navbar = () => {
           </li>
         </ul>
         {/* CTA Button */}
-        <button className="hidden md:block px-4 py-2 bg-gray-500 text-white font-bold rounded-lg hover:bg-gray-600 transition">
-          Hire Me
+        <button className="cursor-pointer hidden md:inline-flex group/button relative items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl  border border-white/20">
+          <span className="text-lg cursor-pointer">Hire Me</span>
+          <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+            <div className="relative h-full w-10 bg-white/20"></div>
+          </div>
         </button>
       </div>
     </nav>

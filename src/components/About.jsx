@@ -51,7 +51,11 @@ const About = () => {
           {/* Right Side  */}
           <div className="w-full md:w-1/2 text-center md:text-left">
             <p className="text-lg text-gray-300 leading-relaxed">
-            I am a passionate Full Stack Developer with expertise in building dynamic, scalable web applications. Skilled in modern technologies like React, Node.js, MongoDB, Express.js and Three.js, I focus on delivering seamless user experiences. Always exploring new tools to enhance performance and creativity in every project.
+              I am a passionate Full Stack Developer with expertise in building
+              dynamic, scalable web applications. Skilled in modern technologies
+              like React, Node.js, MongoDB, Express.js and Three.js, I focus on
+              delivering seamless user experiences. Always exploring new tools
+              to enhance performance and creativity in every project.
             </p>
 
             {/* Social Media Icons */}
@@ -84,51 +88,61 @@ const About = () => {
 
             {/* Resume Download Button  */}
             <Tilt
-              className="w-full"
-              tiltMaxAngleX={5} 
-              tiltMaxAngleY={5} 
-              perspective={1000} 
-              transitionSpeed={300} 
+              className="w-full mt-10"
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
+              perspective={1000}
+              transitionSpeed={300}
               scale={1.02}
             >
-              <a
-                href={resumePDF}
-                download="Ajay_Kumar_Resume.pdf"
-                onClick={handleDownload}
-                className={`mt-10 inline-flex items-center px-6 py-3 text-white text-lg font-medium rounded-lg shadow-md transition duration-300 transform ${
-                  isDownloading
-                    ? "bg-blue-500 scale-95"
-                    : downloaded
-                    ? "bg-green-600"
-                    : "bg-gray-700 hover:bg-gray-600"
-                }`}
-              >
-                {isDownloading ? (
-                  <>
-                    <svg
-                      className="animate-spin mr-2 h-5 w-5 text-white"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M12 6v6l4 2" />
-                    </svg>
-                    Downloading...
-                  </>
-                ) : downloaded ? (
-                  <>
-                    <FaCheckCircle className="mr-2" /> Downloaded
-                  </>
-                ) : (
-                  <>
-                    <FaDownload className="mr-2" /> My Resume
-                  </>
-                )}
-              </a>
+              <div className="relative group inline-block">
+                <a
+                  href={resumePDF}
+                  download="Ajay_Kumar_Resume.pdf"
+                  onClick={handleDownload}
+                  className="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+                >
+                  {/* Gradient Border Effect */}
+                  <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+
+                  {/* Button Content - Fixed */}
+                  <span className="relative z-10 inline-flex items-center px-6 py-3 rounded-xl bg-gray-900 space-x-2">
+                    {isDownloading ? (
+                      <>
+                        <svg
+                          className="animate-spin h-5 w-5 text-white"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M12 6v6l4 2" />
+                        </svg>
+                        <span className="transition-all duration-500 group-hover:translate-x-1">
+                          Downloading...
+                        </span>
+                      </>
+                    ) : downloaded ? (
+                      <>
+                        <FaCheckCircle className="h-5 w-5" />
+                        <span className="transition-all duration-500 group-hover:translate-x-1">
+                          Downloaded
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <FaDownload className="h-5 w-5" />
+                        <span className="transition-all duration-500 group-hover:translate-x-1">
+                          My Resume
+                        </span>
+                      </>
+                    )}
+                  </span>
+                </a>
+              </div>
             </Tilt>
           </div>
         </div>

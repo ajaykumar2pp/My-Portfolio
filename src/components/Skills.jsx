@@ -72,7 +72,7 @@ const Skills = () => {
   const { onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="py-12 px-4 bg-gray-800">
+    <section className="py-12 px-4 bg-gray-900">
       <div className="text-center mb-8">
         <h2 className="text-3xl text-white font-bold">My Technology Stack</h2>
       </div>

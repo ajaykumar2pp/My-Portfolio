@@ -21,16 +21,16 @@ const Contact = () => {
   });
 
   return (
-    <div className="py-16 bg-gray-800 text-white">
+    <div className="py-10 bg-gray-900 text-white">
       <div className="container mx-auto px-6 md:px-8 text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+        <h2 className="text-3xl font-bold mb-6 md:mb-0 lg:mb-6">Contact Me</h2>
       </div>
-      <div className="flex justify-center items-center bg-gray-800 min-h-screen">
+      <div className="flex justify-center items-center bg-gray-900 min-h-screen">
         <div className="w-full max-w-7xl px-6">
           {/* Responsive Grid Layout */}
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info Box */}
-            <div className="w-full md:w-auto bg-gray-900 p-4 md:p-6 rounded-lg shadow-lg">
+            <div className="w-full md:w-auto bg-gray-800 p-8  rounded-lg shadow-lg transition-all duration-300">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-center text-white">
                 Contact Information
               </h2>
@@ -84,7 +84,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-900 p-8 rounded-lg shadow-lg md:col-span-2">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg md:col-span-2 hover:shadow-2xl transition-all duration-300">
               <h2 className="text-2xl font-bold mb-4 text-center text-white">
                 Quick Contact
               </h2>
@@ -226,7 +226,7 @@ const Contact = () => {
                 {/* Send Message Button */}
                 <button
                   type="submit"
-                  className="w-full border-blue-200 bg-blue-500 hover:border-transparent hover:bg-blue-600 text-white py-2 rounded-lg transition-colors duration-300"
+                  className="w-full border-blue-200 bg-blue-500 hover:border-transparent hover:bg-blue-600 text-white py-2 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
                   Send Message
                 </button>
