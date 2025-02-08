@@ -2,9 +2,9 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <div className="py-16 px-6 bg-gray-900 text-white">
+    <div className="py-10 px-6 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-white">
+        <h2 className="text-3xl font-bold mb-10 text-center text-white">
           Education
         </h2>
 

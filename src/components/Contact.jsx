@@ -86,7 +86,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg md:col-span-2 hover:shadow-2xl transition-all duration-300">
               <h2 className="text-2xl font-bold mb-4 text-center text-white">
-                Quick Contact
+              🚀  Quick Contact
               </h2>
               <form onSubmit={formik.handleSubmit}>
                 {/* Name Input */}
