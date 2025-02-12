@@ -32,10 +32,10 @@ const getRandomDirection = (index) => {
 
 const Projects = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <div ref={ref} className="py-10 px-6 bg-gray-900 text-gray-100 overflow-hidden">
+    <div ref={ref} className="py-10 px-6 bg-gray-900 text-gray-100 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Animated Heading */}
         <motion.h2 
@@ -49,7 +49,7 @@ const Projects = () => {
 
         {/* Animated Project Cards */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
@@ -69,7 +69,7 @@ const Projects = () => {
                 transitionSpeed={300}
                 className="shadow-lg overflow-hidden rounded-lg p-6 bg-gray-800 border-2 border-transparent hover:border-blue-500 transition-all duration-300 ease-in-out cursor-pointer"
               >
-                <div className="p-5 h-full flex flex-col justify-between">
+                <div className="p-5 min-h-[200px] flex flex-col justify-between">
                   <div className="flex justify-between items-center">
                     <h3 className="text-2xl text-gray-100 font-semibold">
                       {project.title}

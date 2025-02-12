@@ -4,14 +4,14 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import NotPageFound from "./components/NotPageFound";
-// import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 import MainLayout from "./layouts/MainLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

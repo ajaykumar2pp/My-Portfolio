@@ -11,12 +11,12 @@ const Hero = () => {
 
   const textVariants = {
     hidden: { opacity: 0, x: -50 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    show: { opacity: 1, x: 0, transition: { duration: 1, ease: "anticipate" } },
   };
 
   const imageVariants = {
     hidden: { opacity: 0, x: 50 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    show: { opacity: 1, x: 0, transition: { duration: 1.2, ease: "anticipate" } },
   };
 
   return (
@@ -24,17 +24,19 @@ const Hero = () => {
       ref={ref}
       className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-6 lg:gap-10 overflow-hidden"
     >
-      {/* <StarsBackground /> */}
-      {/* Text Section (LEFT) */}
+      <StarsBackground />
+      {/* Text Section */}
       <motion.div
         className="w-full text-center lg:text-center px-4 overflow-hidden"
         variants={textVariants}
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-500 animate-pulse transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+        <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-500 cursor-pointer"
+        whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+        >
           Hi, I'm Ajay Kumar
-        </h1>
+        </motion.h1>
 
         {/* Typewriter Effect for Roles */}
         <div className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
@@ -49,16 +51,16 @@ const Hero = () => {
               ],
               autoStart: true,
               loop: true,
-              delay: 50,
-              deleteSpeed: 25,
+              delay: 60,
+              deleteSpeed: 30,
             }}
           />
         </div>
 
         {/* Call to Action Button */}
         <motion.button
-          className="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 hover:scale-110 transition-all duration-300"
-          whileHover={{ scale: 1.1 }}
+          className="mt-6 px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600"
+          whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           whileTap={{ scale: 0.95 }}
         >
           Let's Connect
@@ -72,7 +74,7 @@ const Hero = () => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
       >
-        <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.02} transitionSpeed={400} className="drop-shadow-xl">
+        <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.02} transitionSpeed={500} className="drop-shadow-xl">
           <img
             src={hacker3D}
             alt="hacker"

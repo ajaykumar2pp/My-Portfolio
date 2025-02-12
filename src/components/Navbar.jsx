@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6">
+        <ul className="hidden space-x-6">
           <li>
             <Link to="/" className="hover:text-gray-300">
               Home
