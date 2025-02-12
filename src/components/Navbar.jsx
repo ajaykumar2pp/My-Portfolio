@@ -104,7 +104,9 @@ const Navbar = () => {
         </ul>
         {/* Hire Me Button */}
         <a 
-        href="mailto:ajay2kumarpp@gmail.com"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=ajay2kumarpp@gmail.com&su=Job%20Inquiry&body=Hello%2C%20I%20am%20interested%20in%20hiring%20you."
+        target="_blank"
+        rel="noopener noreferrer"
         className="cursor-pointer hidden md:inline-flex group/button relative items-center justify-center overflow-hidden rounded-md bg-gray-800/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl  border border-white/20">
           <FaBriefcase className="text-xl me-3" />
           <span className="text-lg cursor-pointer"> Hire Me</span>

@@ -22,12 +22,12 @@ const Hero = () => {
   return (
     <div
       ref={ref}
-      className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-10"
+      className="min-h-screen bg-gray-900 text-white flex flex-col lg:flex-row items-center justify-center px-6 pt-24 lg:pt-24 gap-6 lg:gap-10 overflow-hidden"
     >
-      <StarsBackground />
+      {/* <StarsBackground /> */}
       {/* Text Section (LEFT) */}
       <motion.div
-        className="w-full text-center lg:text-center px-4"
+        className="w-full text-center lg:text-center px-4 overflow-hidden"
         variants={textVariants}
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
@@ -67,7 +67,7 @@ const Hero = () => {
 
       {/* Image Section (RIGHT) */}
       <motion.div
-        className="w-full flex justify-center lg:justify-end"
+        className="w-full flex justify-center lg:justify-end overflow-hidden"
         variants={imageVariants}
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
@@ -77,7 +77,8 @@ const Hero = () => {
             src={hacker3D}
             alt="hacker"
             draggable="false"
-            className="max-w-xs sm:max-w-md transform hover:scale-105 transition duration-300 cursor-pointer"
+            className="max-w-xs sm:max-w-md w-full transform hover:scale-105 transition duration-300 cursor-pointer"
+            style={{ overflow: "hidden" }}
           />
         </Tilt>
       </motion.div>

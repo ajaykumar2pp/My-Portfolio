@@ -23,7 +23,7 @@ const containerVariants = {
 
 const getRandomDirection = (index) => {
   const directions = [
-    { x: -100, y: 50 }, // Left
+    { x: -50, y: 30 }, // Left
     { x: 100, y: 50 },  // Right
     { x: 0, y: 100 },   // Bottom
   ];
@@ -35,8 +35,8 @@ const Projects = () => {
   const isInView = useInView(ref, { once: false, amount: 0.2 });
 
   return (
-    <div ref={ref} className="py-10 px-6 bg-gray-900 text-gray-100">
-      <div className="container mx-auto px-4">
+    <div ref={ref} className="py-10 px-6 bg-gray-900 text-gray-100 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Animated Heading */}
         <motion.h2 
           className="text-3xl font-bold mb-10 text-center"

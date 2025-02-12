@@ -40,7 +40,7 @@ const About = () => {
 
   return (
     <div ref={ref} className="relative py-12 bg-gray-900 text-white">
-      <StarsBackground />
+      {/* <StarsBackground /> */}
       <div className="container mx-auto px-6">
         {/* Section Heading */}
         <motion.div
@@ -92,7 +92,7 @@ const About = () => {
             >
               <motion.a
                 variants={socialVariants}
-                href="https://github.com/your-github"
+                href="https://github.com/ajaykumar2pp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-yellow-400 transition duration-300 text-3xl"
@@ -101,7 +101,7 @@ const About = () => {
               </motion.a>
               <motion.a
                 variants={socialVariants}
-                href="https://instagram.com/your-instagram"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-yellow-400 transition duration-300 text-3xl"
@@ -110,7 +110,7 @@ const About = () => {
               </motion.a>
               <motion.a
                 variants={socialVariants}
-                href="https://linkedin.com/in/your-linkedin"
+                href="https://www.linkedin.com/in/ajay-kumar-6a041b1ba"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-yellow-400 transition duration-300 text-3xl"
