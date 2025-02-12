@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaCheckCircle,
 } from "react-icons/fa";
-import ajayKumar from "../assets/about-ajay.avif";
+import ajayKumar from "../assets/ninja.png";
 import resumePDF from "../assets/Ajay_Resume.pdf";
 import Tilt from "react-parallax-tilt";
 import StarsBackground from "./StarsBackground"
