@@ -7,12 +7,13 @@ import {
   FaLinkedin,
   FaCheckCircle,
 } from "react-icons/fa";
-import ajayKumar from "../assets/ajay.jpg";
+import ajayKumar from "../assets/about-ajay.avif";
 import resumePDF from "../assets/Ajay_Resume.pdf";
 import Tilt from "react-parallax-tilt";
+import StarsBackground from "./StarsBackground"
 
 const socialVariants = {
-  initial: { x: 100, opacity: 0 },
+  initial: { x: 200, opacity: 0 },
   animate: {
     x: 0,
     opacity: 1,
@@ -38,7 +39,8 @@ const About = () => {
   };
 
   return (
-    <div ref={ref} className="py-12 bg-gray-900 text-white">
+    <div ref={ref} className="relative py-12 bg-gray-900 text-white">
+      <StarsBackground />
       <div className="container mx-auto px-6">
         {/* Section Heading */}
         <motion.div
