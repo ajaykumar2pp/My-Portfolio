@@ -7,7 +7,7 @@ const projects = [
   { title: "WhatsApp Clone", tech: "React, Node.js, MongoDB", link: "#", description: "A WhatsApp clone multi-user chat with more privacy" },
   { title: "HRMS Dashboard", tech: "MERN, Vanilla CSS", link: "#", description: "A Human Resource Management System dashboard" },
   { title: "Habit Tracker", tech: "MERN, Vanilla CSS", link: "#", description: "Track your habits and personal progress" },
-  { title: "Portfolio", tech: "React, Tailwind CSS", link: "#", description: "My personal portfolio showcasing projects and skills" },
+  { title: "Portfolio", tech: "React, Tailwind CSS", link: "https://github.com/ajaykumar2pp/My-Portfolio", description: "My personal portfolio showcasing projects and skills" },
   { title: "E-commerce", tech: "React, Node.js, MongoDB", link: "#", description: "An E-commerce platform for buying and selling products online" },
   { title: "Job Portal", tech: "React, Node.js, MongoDB", link: "#", description: "A Job Portal platform for job seekers and recruiters" },
 ];
@@ -77,6 +77,7 @@ const Projects = () => {
                     {/* GitHub Icon */}
                     <a
                       href="https://github.com/ajaykumar2pp"
+                      // href={project.github || "https://github.com/ajaykumar2pp"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:scale-110 transition-transform duration-200"
