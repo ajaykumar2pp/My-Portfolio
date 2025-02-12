@@ -4,10 +4,10 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const Map = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-900  py-10 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-white flex justify-center items-center gap-2 mb-6">
+      <h2 className="text-3xl sm:text-4xl font-bold text-white flex justify-center items-center gap-2 mb-6">
         <FaMapMarkerAlt className="text-green-400 text-4xl" /> Find Me on the Map
       </h2>
-      <p className="text-lg font-mono font-semibold text-blue-400 mb-8">
+      <p className="text-base sm:text-lg font-mono font-semibold text-blue-400 mb-4 px-4 sm:px-6 md:mb-8">
         Reach out to me easily! Here's my location on the map.
       </p>
 

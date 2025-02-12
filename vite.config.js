@@ -7,4 +7,8 @@ export default defineConfig({
   build: {
     outDir: 'dist', 
   },
+  server: {
+    host: '0.0.0.0', // Allow access from other devices
+    port: 5173,      // Keep the default port
+  },
 })
