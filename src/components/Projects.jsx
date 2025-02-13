@@ -158,7 +158,7 @@ const Projects = () => {
                       <div className="flex justify-end mt-2">
                         <button
                           onClick={() => toggleReadMore(index)}
-                          className="text-blue-400 hover:underline"
+                          className="text-blue-400 text-sm hover:underline"
                         >
                           {expanded[index] ? "Read Less" : "Read More"}
                         </button>
